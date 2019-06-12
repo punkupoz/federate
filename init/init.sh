@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo -en "\e[1;32m? \e[0mProject name? [ neko ]:";
+read PROJECT_NAME;
+if [ -z "$PROJECT_NAME" ]; then
+  PROJECT_NAME='neko';
+fi
+
 echo -en "\e[1;32m? \e[0mGateway port? [ 5000 ]:";
 read GATE_WAY_PORT;
 if [ -z "$GATE_WAY_PORT" ]; then

@@ -143,5 +143,5 @@ type User {
 EOF
 
 sed -i "/const serviceList = \[/ a\
-    { name: '${SERVICE_NAME}', url: 'http://localhost:${SERVICE_PORT}/graphql' },
+${TAB}{ name: '${SERVICE_NAME}', url: 'http://localhost:${SERVICE_PORT}/graphql' },
 " ./${PROJECT_NAME}/index.js
